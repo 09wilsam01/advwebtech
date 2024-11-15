@@ -1,5 +1,5 @@
 body{
-	background-color: #f0eeee;
+	background-color: #;
 	height: 97vh;
 	border-style: solid;
 	border-color: #B3D3FF;
@@ -18,4 +18,33 @@ body{
 #form{
 	margin-top: 20vh;
 	text-align: center;
+}
+
+button{   
+    background-color: #B3D3FF;   
+    width: 40vh;  
+    padding: 15px;   
+    margin: 10px 0px;   
+    border: none;   
+    cursor: pointer;   
+}
+  
+input[type=username], input[type=password]{   
+    width: 50vh;   
+    margin: 8px 0;  
+    padding: 12px 20px;   
+    display: inline-block;
+}
+
+input[type=checkbox]{
+	
+}
+
+button:hover{   
+    opacity: 0.7;   
+}
+        
+.container{
+	text-align: center;
+    padding: 15vh;
 }
