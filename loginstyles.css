@@ -1,0 +1,21 @@
+body{
+	background-color: #f0eeee;
+	height: 97vh;
+	border-style: solid;
+	border-color: #B3D3FF;
+}
+
+#title{
+	text-align: center;
+	margin-top: 20vh;
+	margin-left: 36%;
+	width: 55vh;
+	border-style: solid;
+	border-color: #B3D3FF;
+	font-family: Arial Black, sans-serif;
+}
+
+#form{
+	margin-top: 20vh;
+	text-align: center;
+}
