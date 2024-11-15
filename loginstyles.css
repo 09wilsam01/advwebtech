@@ -20,7 +20,7 @@ body{
 	text-align: center;
 }
 
-button{   
+button{
     background-color: #B3D3FF;   
     width: 40vh;  
     padding: 15px;   
@@ -28,7 +28,7 @@ button{
     border: none;   
     cursor: pointer;   
 }
-  
+
 input[type=username], input[type=password]{   
     width: 50vh;   
     margin: 8px 0;  
