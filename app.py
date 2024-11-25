@@ -1,0 +1,54 @@
+from flask import Flask, render_template, request, redirect, url_for, flash
+from models import db, User
+from flask_bcrypt import Bcrypt
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+db.init_app(app)
+bcrypt = Bcrypt(app)
+
+with app.app_context():
+    db.create_all()
+
+@app.route('/', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        user = User.query.filter_by(username=username).first()
+
+        if user and bcrypt.check_password_hash(user.password, password):
+            flash('Login successful!', 'success')
+            return redirect(url_for('dashboard'))
+        else:
+            flash('Invalid username or password', 'danger')
+
+    return render_template('index.html')
+
+@app.route("/login")
+def login():
+    return render_template('login.html')
+
+@app.route("/signup")
+def signup():
+    return render_template('signup.html')
+
+@app.route("/home")
+def home():
+    return render_template('home.html')
+
+@app.route("/passreset")
+def passreset():
+    return render_template('passreset.html')
+
+@app.route('/force404')
+def force404():
+    abort(404)
+
+@app.errorhandler(404)
+def  page_not_found(error):
+    return "Couldn't find the page you requested", 404
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', debug = True)
