@@ -12,7 +12,7 @@ with app.app_context():
     db.create_all()
 
 @app.route('/', methods=['GET', 'POST'])
-def login():
+def index():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
