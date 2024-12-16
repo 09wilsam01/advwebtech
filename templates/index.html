@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="indexstyles.css">
+		<link rel="stylesheet" href="{{url_for('static', filename='indexstyles.css') }}">
 		<title>Big Boss Gallery</title>
 	</head>
 	
@@ -13,7 +13,7 @@
 		</div>
 
 		<div id="form">
-			<form action="home.html">
+			<form action="/home">
 				<br><button type="submit">Enter The Site</button><br>
 			</form>
 		</div>

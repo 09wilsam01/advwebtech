@@ -1,15 +1,15 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="{{url_for('static', filename='styles.css') }}">
 		<title>Big Boss Gallery - Home</title>
 	</head>
 	
 	<div class="author-container">
-		<img src="Pictures/Me.jpeg" alt="About Me" style="width:11vh;height:16vh;border-radius: 50%;border-style:solid;border-color:#B3D3FF;">
+		<img src="{{url_for('static', filename='images/Me.css') }}" alt="About Me" style="width:11vh;height:16vh;border-radius: 50%;border-style:solid;border-color:#B3D3FF;">
 		
 		<div class="overlay">
-			<a class="image-text" href="aboutme.html">About Me</a>
+			<a class="image-text" href="/aboutme">About Me</a>
 		</div>
 	</div>
 		
@@ -21,19 +21,19 @@
 		</div>
 			
 		<div class="column">
-			<a href="19-22.html">
+			<a href="/19-22">
 				<img src="Pictures/Pitlochry.jpeg" alt="Faskally 2019" style="width:45vh;height:73vh;border-style:solid;border-color:#B3D3FF;">
 			</a>
 		</div>
 			
 		<div class="column">
-			<a href="23.html">
+			<a href="/23">
 				<img src="Pictures/Aviemore.jpeg" alt="Aviemore 2023" style="width:45vh;height:73vh;border-style:solid;border-color:#B3D3FF;">
 			</a>
 		</div>
 			
 		<div class="column">
-			<a href="24.html">
+			<a href="/24">
 				<img src="Pictures/Snow.jpeg" alt="Snow 2024" style="width:45vh;height:73vh;border-style:solid;border-color:#B3D3FF;">
 			</a>
 		</div>
