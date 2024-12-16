@@ -6,7 +6,7 @@
 	</head>
 	
 	<div class="link-container">
-		<a href="home.html">Home</a>
+		<a href="/home">Home</a>
 	</div>
 	
 	<body>
@@ -16,12 +16,12 @@
 		</div>
 		
 		<div class="column">
-			<img src="Pictures/Turkey24.jpeg" alt="Orka Lotus Beach" style="width:38vh;">
+			<img src="{{url_for('static', filename='images/Turkey24.JPEG') }}" alt="Orka Lotus Beach" style="width:38vh;">
 			<figcaption>Orka Lotus Beach near Marmaris,<br> Turkey - Summer 2024</figcaption>
 		</div>
 		
 		<div class="column">
-			<img src="Pictures/Snow.jpeg" alt="Snowfall" style="width:38vh;">
+			<img src="P{{url_for('static', filename='images/snow.JPEG') }}" alt="Snowfall" style="width:38vh;">
 			<figcaption>Snowfall - December 2024</figcaption>
 		</div>
 	</body>

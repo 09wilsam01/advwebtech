@@ -6,7 +6,7 @@
 	</head>
 	
 	<div class="link-container">
-		<a href="home.html">Home</a>
+		<a href="/home">Home</a>
 	</div>
 	
 	<body>
@@ -21,17 +21,17 @@
 		<p>Here are some funny photos of me.</p>
 		
 		<div class="column">
-			<img src="Pictures/Plane-toilet.jpeg" alt="Plane Bathroom Mirror" style="width:38vh;">
+			<img src="{{url_for('static', filename='images/Plane-toilet.JPEG') }}" alt="Plane Bathroom Mirror" style="width:38vh;">
 			<figcaption>Me in an airplane bathroom, 2024</figcaption>
 		</div>
 		
 		<div class="column">
-			<img src="Pictures/Racecar.jpeg" alt="Stuck in a racecar" style="width:38vh;">
+			<img src="{{url_for('static', filename='images/Racecar.JPEG') }}" alt="Stuck in a racecar" style="width:38vh;">
 			<figcaption>Me stuck in a model racecar, 2024</figcaption>
 		</div>
 		
 		<div class="column">
-			<img src="Pictures/maccies.jpeg" alt="McDonalds trip" style="width:38vh;">
+			<img src="{{url_for('static', filename='images/maccies.JPEG') }}" alt="McDonalds trip" style="width:38vh;">
 			<figcaption>Me deadeyed in a Mcdonalds</figcaption>
 		</div>
 	</body>
