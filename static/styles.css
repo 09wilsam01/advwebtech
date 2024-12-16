@@ -1,0 +1,81 @@
+html{
+	font-family: Arial, sans-serif;
+	text-align: center;
+	min-height: 100%;
+	background-color: #FAF9F6;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #B3D3FF;
+	margin: 1.5vh;
+}
+
+#title{
+    text-align: center;
+    margin-top: 10vh;
+    font-family: "Arial Black", sans-serif;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(179, 211, 255);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+}
+
+.column {
+	float: left;
+	width: 32%;
+	margin-top: 10vh;
+	margin-left: 1.5vh;
+	margin-bottom: 5vh;
+}
+
+figcaption {
+	padding-top: 1vh;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+.author-container{
+	float: right;
+	margin-right: 5vh;
+	display: flex;
+	justify-content: end;
+	position: relative;
+}
+
+
+.link-container{
+	float: right;
+	margin-right: 8vh;
+	margin-top: 6.5vh;
+	bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+}
+
+
+.overlay{
+	float: right;
+	height: 16vh;
+	width: 11vh;
+	background-color: rgba(0,0,0,0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.image-text{
+	color: #B3D3FF;
+	text-align: center;
+	text-decoration: none;
+}
+
+.author-container:hover .overlay{
+	opacity: 1;
+}
